@@ -31,7 +31,7 @@ $.ajax({
                             var points = [nanjing, addr];
                             h += 100;
                             h %= 360;
-                            var curve = new BMapLib.CurveLine(points, { strokeColor: "hsl(" + h + ", 100%, 50%)", strokeWeight: 3, strokeOpacity: 0.5 }); //创建弧线对象
+                            var curve = new BMapLib.CurveLine(points, { strokeColor: "blue", strokeWeight: 3, strokeOpacity: 0.5 }); //创建弧线对象
                             map.addOverlay(curve); //添加到地图中
                             var dot = new BMap.Circle(addr, 3, { color: 'red' });
                             dot.setFillColor('red');
